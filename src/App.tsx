@@ -8,6 +8,7 @@ import Heading from "./components/Heading";
 import { personList } from "./utils/data";
 import TopNavigation from "./layout/TopNavigation";
 import Input from "./components/Input";
+import Box from "./components/Box";
 
 function App() {
   const personName = {
@@ -33,6 +34,14 @@ function App() {
       />
       <Person name={personName} />
       <PersonList names={personList} />
+      <Box
+        styles={{
+          border: "1px solid black",
+          width: "150px",
+          height: "50px",
+          margin: "0 auto",
+        }}
+      />
     </div>
   );
 }
