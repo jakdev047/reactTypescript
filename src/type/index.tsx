@@ -11,3 +11,7 @@ export interface Name {
 export interface PersonListProps {
   names: Name[];
 }
+export interface AuthUser {
+  name: string;
+  email: string;
+}

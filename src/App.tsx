@@ -9,6 +9,7 @@ import { personList } from "./utils/data";
 import TopNavigation from "./layout/TopNavigation";
 import Input from "./components/Input";
 import Box from "./components/Box";
+import LoggedIn from "./components/LoggedIn";
 
 function App() {
   const personName = {
@@ -42,6 +43,7 @@ function App() {
           margin: "0 auto",
         }}
       />
+      <LoggedIn />
     </div>
   );
 }
