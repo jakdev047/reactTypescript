@@ -10,6 +10,7 @@ import TopNavigation from "./layout/TopNavigation";
 import Input from "./components/Input";
 import Box from "./components/Box";
 import LoggedIn from "./components/LoggedIn";
+import Counter from "./components/Counter";
 
 function App() {
   const personName = {
@@ -44,6 +45,7 @@ function App() {
         }}
       />
       <LoggedIn />
+      <Counter />
     </div>
   );
 }

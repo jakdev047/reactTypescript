@@ -15,3 +15,11 @@ export interface AuthUser {
   name: string;
   email: string;
 }
+
+export interface CounterState {
+  count: number;
+}
+export interface CounterAction {
+  type: string;
+  payload: number;
+}
