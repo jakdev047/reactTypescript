@@ -17,6 +17,8 @@ import { UserContextProvider } from "./context/userContext/UserContext";
 import User from "./context/userContext/User";
 import DomRef from "./ref/DomRef";
 import MutableRef from "./ref/MutableRef";
+import Private from "./auth/Private";
+import Profile from "./auth/Profile";
 
 function App() {
   const personName = {
@@ -65,6 +67,7 @@ function App() {
 
       <DomRef />
       <MutableRef />
+      <Private isLoggedIn={false} component={Profile} />
     </div>
   );
 }
