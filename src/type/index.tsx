@@ -23,3 +23,16 @@ export interface CounterAction {
   type: string;
   payload: number;
 }
+export interface SingleTaskList {
+  id: number;
+  name: string;
+  draggable: boolean;
+}
+export interface Task {
+  id: number;
+  title: string;
+  list?: SingleTaskList[] | null;
+}
+export interface TaskList {
+  taskList?: Task[] | null;
+}

@@ -19,6 +19,7 @@ import DomRef from "./ref/DomRef";
 import MutableRef from "./ref/MutableRef";
 import Private from "./auth/Private";
 import Profile from "./auth/Profile";
+import DragAndDrop from "./module/dragAndDrop";
 
 function App() {
   const personName = {
@@ -68,6 +69,10 @@ function App() {
       <DomRef />
       <MutableRef />
       <Private isLoggedIn={false} component={Profile} />
+
+      <DragAndDrop />
+
+      <div style={{ height: "300px" }}></div>
     </div>
   );
 }
