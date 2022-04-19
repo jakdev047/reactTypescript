@@ -31,6 +31,7 @@ export interface SingleTaskList {
 export interface Task {
   id: number;
   title: string;
+  draggable: boolean;
   list?: SingleTaskList[] | null;
 }
 export interface TaskList {
